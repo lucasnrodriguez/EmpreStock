@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    font-family: "Istok Web", sans-serif;
+    display: flex;
+}
+
+/*Títulos*/
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+
+/*left-bar*/
+header {
+    height: 100vh;
+    z-index: 1;
+}
+#EmpreStock {
+    width: 384px;
+    height: 72px;
+    background-color: #068979;
+    display: flex;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 48px;
+}
+.logo img {
+    height: 40px;
+}
+.logo h1 {
+    color: white;
+}
+#left-bar {
+    width: 384px;
+    height: calc(100% - 72px);
+    background-color: #252525;
+    box-shadow: 2px 0 8px #25252550;
+}
+#user {
+    
+}
+
+/*main*/
+main {
+    width: 100%;
+    background-color: #f0f0f0;
+    z-index: 0;
+}
+#section-title {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px #25252550;
+    background-color: white;
+}
+#section-title h1 {
+    color: #068979;
+    margin: 0 48px;
+}
+/*search-bar*/
+#section-content {
+    margin: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+#search-bar {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #25252550;
+    display: flex;
+    background-color: white;
+    overflow: auto;
+}
+#search-input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-family: "Istok Web", sans-serif;
+    font-size: 16px;
+    color: #252525;
+}
+#search-input:focus {
+    outline: none;
+}
+input::placeholder {
+    font-family: "Istok Web", sans-serif;
+    font-size: 16px;
+    color: #757575;
+}
+#search-input::-webkit-search-cancel-button {
+    display: none;
+}
+#search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 24px;
+}
+#search-button i {
+    color: #068979;
+}
+/*botones*/
+#admin-content {
+    display: flex;
+    gap: 24px;
+}
+.admin-button {
+    padding: 12px 24px;
+    background-color: #068979;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #25252550;
+    cursor: pointer;
+}
+.admin-button h3 {
+    color: white;
+}
+.admin-button-2 {
+    background-color: white;
+}
+.admin-button-2 h3 {
+    color: #068979;
+}
+.admin-button-disabled {
+    background-color: #d9d9d9;
+    cursor: default;
+    box-shadow: none;
+}
+.admin-button-disabled h3 {
+    color: #757575;
+}
+.admin-button-1:active {
+    background-color: #0c6157;
+    transition: 0.1s;
+}
+.admin-button-2:active {
+    background-color: #f0f0f0;
+    transition: 0.1s;
+}
