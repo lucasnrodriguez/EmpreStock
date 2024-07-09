@@ -10,6 +10,7 @@
 body {
     font-family: "Istok Web", sans-serif;
     display: flex;
+    color: white;
 }
 
 /*Títulos*/
@@ -20,6 +21,9 @@ h2 {
     font-size: 20px;
 }
 h3 {
+    font-size: 18px;
+}
+h4 {
     font-size: 16px;
 }
 p {
@@ -33,7 +37,7 @@ header {
 }
 #EmpreStock {
     width: 384px;
-    height: 72px;
+    height: 80px;
     background-color: #068979;
     display: flex;
 }
@@ -51,12 +55,71 @@ header {
 }
 #left-bar {
     width: 384px;
-    height: calc(100% - 72px);
+    height: calc(100% - 80px);
     background-color: #252525;
     box-shadow: 2px 0 8px #25252550;
 }
+#left-bar-container {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 #user {
-    
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.user-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-tab-left-1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.user-tab-left-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+.user-tab-right {
+    padding: 12px;
+    cursor: pointer;
+    color: #757575;
+}
+hr {
+    margin-left: 48px;
+    border: 0.5px solid #757575;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.nav-tab {
+    padding: 12px 0 12px 48px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+}
+.nav-tab i {
+    color: #757575;
+}
+.nav-tab:active {
+    border-left: 8px solid #068979;
+    padding: 12px 0 12px 40px;
+}
+.nav-tab i:active {
+    color: #068979;
+}
+.nav-tab h3:active {
+    color: #068979;
 }
 
 /*main*/
@@ -67,7 +130,7 @@ main {
 }
 #section-title {
     width: 100%;
-    height: 72px;
+    height: 80px;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 8px #25252550;
@@ -94,11 +157,11 @@ main {
 }
 #search-input {
     width: 100%;
-    padding: 16px;
+    padding: 12px 24px;
     border: none;
     border-radius: 12px;
     font-family: "Istok Web", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #252525;
 }
 #search-input:focus {
@@ -106,7 +169,7 @@ main {
 }
 input::placeholder {
     font-family: "Istok Web", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #757575;
 }
 #search-input::-webkit-search-cancel-button {
