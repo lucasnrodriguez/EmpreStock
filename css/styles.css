@@ -121,6 +121,9 @@ hr {
 .tab-active h3 {
     color: #068979;
 }
+.icon-tab {
+    width: 24px;
+}
 
 /*main*/
 main {
