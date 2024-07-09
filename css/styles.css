@@ -111,14 +111,14 @@ hr {
 .nav-tab i {
     color: #757575;
 }
-.nav-tab:active {
+.tab-active {
     border-left: 8px solid #068979;
     padding: 12px 0 12px 40px;
 }
-.nav-tab i:active {
+.tab-active i {
     color: #068979;
 }
-.nav-tab h3:active {
+.tab-active h3 {
     color: #068979;
 }
 
