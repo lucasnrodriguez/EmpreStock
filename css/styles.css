@@ -111,6 +111,10 @@ hr {
 .nav-tab i {
     color: #757575;
 }
+.nav-tab:hover {
+    background-color: #06897a25;
+    transition: 0.1s;
+}
 .tab-active {
     border-left: 8px solid #068979;
     padding: 12px 0 12px 40px;
