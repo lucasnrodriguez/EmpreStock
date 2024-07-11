@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body {
+    font-family: "Istok Web", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: rgb(6, 137, 121);
+    background: radial-gradient(
+        circle,
+        rgba(6, 137, 121, 1) 0%,
+        rgba(12, 97, 87, 1) 100%
+    );
+}
+
+/*Títulos*/
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+
+/*LOGO*/
+#EmpreStock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 48px;
+}
+.logo img {
+    height: 64px;
+}
+.logo h1 {
+    font-size: 48px;
+    color: white;
+}
+
+/*BOTONES*/
+#buttons-container {
+    display: flex;
+    gap: 24px;
+}
+.button {
+    padding: 24px 48px;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.button h2 {
+    color: #068979;
+}
+.button:active {
+    background-color: #f0f0f0;
+    transition: 0.1s;
+}
