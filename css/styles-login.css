@@ -44,32 +44,46 @@ p {
 }
 
 /*LOGO*/
-#EmpreStock {
+.EmpreStock,
+.EmpreStock2 {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
-.logo {
+.logo,
+.logo2 {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 0 48px;
 }
 .logo img {
-    height: 64px;
+    height: 96px;
 }
 .logo h1 {
+    font-size: 64px;
+    color: white;
+}
+.logo2 img {
+    height: 64px;
+}
+.logo2 h1 {
     font-size: 48px;
     color: white;
 }
+/* .EmpreStock2 {
+    display: none;
+} */
 
 /*BOTONES*/
-#buttons-container {
+.buttons-container {
     display: flex;
     gap: 24px;
 }
+/* .buttons-container {
+    display: none;
+} */
 .button {
     padding: 24px 48px;
     background-color: white;
