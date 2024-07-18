@@ -114,39 +114,51 @@
                 </button>
             </form>
 
-            <div id="admin-content">
-                <div class="admin-button admin-button-1">
-                    <h3>Nuevo Artículo</h3>
+            <div id="articles-container">
+
+                <div id="admin-content">
+                    <div class="admin-button admin-button-1">
+                        <h3>Nuevo Artículo</h3>
+                    </div>
+                    <div class="admin-button admin-button-2">
+                        <h3>Eliminar Artículo</h3>
+                    </div>
+                    <div class="admin-button admin-button-disabled">
+                        <h3>Administrar inventario</h3>
+                    </div>
+                    <div class="admin-button admin-button-disabled">
+                        <h3>Descargar PDF</h3>
+                    </div>
                 </div>
-                <div class="admin-button admin-button-2">
-                    <h3>Eliminar Artículo</h3>
-                </div>
-                <div class="admin-button admin-button-disabled">
-                    <h3>Administrar inventario</h3>
-                </div>
-                <div class="admin-button admin-button-disabled">
-                    <h3>Descargar PDF</h3>
-                </div>
+
+                <table id="articlesTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Artículo</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unidad</th>
+                            <th>Costo</th>
+                            <th>Proveedor</th>
+                            <th>Fecha Act.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Código</th>
+                            <th>Artículo</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unidad</th>
+                            <th>Costo</th>
+                            <th>Proveedor</th>
+                            <th>Fecha Act.</th>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
 
-            <table id="articlesTable" class="table">
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Artículo</th>
-                        <th>Descripción</th>
-                        <th>Stock</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Código</th>
-                        <th>Artículo</th>
-                        <th>Descripción</th>
-                        <th>Stock</th>
-                    </tr>
-                </tbody>
-            </table>
+
 
 
             <!-- <form id="crearUsuarioForm" class="hidden" enctype="multipart/form-data">

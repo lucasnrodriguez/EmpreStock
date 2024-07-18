@@ -191,6 +191,14 @@ input::placeholder {
 #search-button i {
     color: #068979;
 }
+
+/*ARTICLES CONTAINER*/
+#articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 /*botones*/
 #admin-content {
     display: flex;
@@ -235,17 +243,17 @@ table {
     border-collapse: collapse;
     border-radius: 12px;
     box-shadow: 0 2px 4px #25252550;
-
     overflow: hidden;
 }
 thead {
     background-color: #068979;
     height: 48px;
-    text-align: start;
 }
 thead th {
     font-size: 18px;
     color: white;
+    text-align: start;
+    padding: 0 24px;
 }
 tbody {
     height: 48px;
@@ -253,5 +261,8 @@ tbody {
 }
 tbody th {
     color: #252525;
+    font-size: 18px;
     font-weight: 400;
+    text-align: start;
+    padding: 0 24px;
 }

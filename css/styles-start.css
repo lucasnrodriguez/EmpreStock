@@ -85,6 +85,8 @@ p {
     display: none;
 } */
 .button {
+    display: flex;
+    justify-content: center;
     padding: 24px 48px;
     background-color: white;
     border-radius: 12px;
@@ -96,4 +98,69 @@ p {
 .button:active {
     background-color: #f0f0f0;
     transition: 0.1s;
+}
+
+/*LOGIN*/
+#logIn {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.input-login {
+    padding: 24px 24px;
+    border: none;
+    border-radius: 12px;
+    font-family: "Istok Web", sans-serif;
+    font-size: 18px;
+    color: #252525;
+}
+.input-login:focus {
+    outline: none;
+}
+.input-login::placeholder {
+    font-family: "Istok Web", sans-serif;
+    font-size: 18px;
+    color: #757575;
+}
+.input-login::-webkit-cancel-button {
+    display: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    padding: 24px 48px;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.login-button h2 {
+    color: #068979;
+}
+.login-button:active {
+    background-color: #f0f0f0;
+    transition: 0.1s;
+}
+
+.go-to-register {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.go-to-register a {
+    font-weight: 700;
+    color: white;
 }
