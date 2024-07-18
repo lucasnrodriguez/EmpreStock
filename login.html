@@ -30,11 +30,10 @@
 
     <main class="main">
         <div id="logIn">
-            <form action="">
-                <input type="text" id="name-login" class="input-login" name="name-login" placeholder="Usuario o E-mail"
-                    required>
-                <input type="password" id="password-login" class="input-login" name="password-login"
-                    placeholder="Contraseña" required />
+            <form id="loginForm">
+                <input type="text" id="usernameLogin" class="input-form" name="username" placeholder="Usuario" required>
+                <input type="password" id="passwordLogin" class="input-form" name="password" placeholder="Contraseña"
+                    required />
                 <div class="checkbox">
                     <input type="checkbox" name="mantenerseLogueado" id="mantenerseLogueado" value="" />
                     <label for="mantenerseLogueado">¿Guardar datos de inicio de sesión?</label>
@@ -42,9 +41,9 @@
             </form>
 
             <div class="login-container">
-                <a href="logIn.html" id="button-login" class="login-button">
+                <button type="submit" id="button-login" class="login-button">
                     <h2>Iniciar sesión</h2>
-                </a>
+                </button>
                 <div class="go-to-register">
                     <p>¿Olvidaste tus datos?</p>
                     <a href="">
@@ -62,5 +61,5 @@
 
     </main>
 
-    <script src="./js/start.js"></script>
+    <script src="app.js"></script>
 </body>

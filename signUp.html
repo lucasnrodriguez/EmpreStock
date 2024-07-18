@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpreStock</title>
+    <script src="https://kit.fontawesome.com/96c8eb25a7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="./css/styles-start.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="EmpreStock">
+        </div>
+
+        <div class="EmpreStock2">
+            <div class="logo2">
+                <img src="assets/logo.svg" />
+                <h1>EmpreStock</h1>
+            </div>
+            <div class="subtitle">
+                <h3>Administrar tu negocio nunca fue tan fácil</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div id="signUp">
+            <form id="registerForm">
+                <input type="text" id="usernameSignup" class="input-form" name="username" placeholder="Usuario"
+                    required>
+                <input type="password" id="passwordSignup" class="input-form" name="password" placeholder="Contraseña"
+                    required />
+                <div class="checkbox">
+                    <input type="checkbox" name="mantenerseLogueado" id="mantenerseLogueado" value="" />
+                    <label for="mantenerseLogueado">¿Guardar datos de inicio de sesión?</label>
+                </div>
+            </form>
+
+            <div class="login-container">
+                <button type="submit" id="button-login" class="login-button">
+                    <h2>Registrarse</h2>
+                </button>
+                <div class="go-to-register">
+                    <p>¿Olvidaste tus datos?</p>
+                    <a href="">
+                        Recuperar acceso
+                    </a>
+                </div>
+                <div class="go-to-register">
+                    <p>¿Ya estás registrado?</p>
+                    <a href="logIn.html">
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
