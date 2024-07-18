@@ -228,3 +228,30 @@ input::placeholder {
     background-color: #f0f0f0;
     transition: 0.1s;
 }
+
+/*TABLA*/
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #25252550;
+
+    overflow: hidden;
+}
+thead {
+    background-color: #068979;
+    height: 48px;
+    text-align: start;
+}
+thead th {
+    font-size: 18px;
+    color: white;
+}
+tbody {
+    height: 48px;
+    background-color: white;
+}
+tbody th {
+    color: #252525;
+    font-weight: 400;
+}

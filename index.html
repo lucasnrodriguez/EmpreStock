@@ -129,15 +129,39 @@
                 </div>
             </div>
 
-            <form id="tablas" action="get">
-                <select id="tipoServicio" name="tipoServicio" th:value="${tipoServicio}">
-                    <option value="Todos">Todos</option>
-                    <option value="Gasista">Gasista</option>
-                    <option value="Plomeria">Plomeria</option>
-                    <option value="Electricista">Electricista</option>
-                </select>
-                <button type="submit">Aplicar Filtro</button>
-            </form>
+            <table id="articlesTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Artículo</th>
+                        <th>Descripción</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Código</th>
+                        <th>Artículo</th>
+                        <th>Descripción</th>
+                        <th>Stock</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!-- <form id="crearUsuarioForm" class="hidden" enctype="multipart/form-data">
+                <input type="text" id="id" name="id" placeholder="Código" required>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="mail"> Mail: </label>
+                <input type="email" id="mail" name="mail" required>
+
+                <label for="archivo"> Archivos: </label>
+                <input type="file" id="archivo" name="archivo">
+
+                <button type="submit"> Crear Usuario </button>
+
+            </form> -->
         </div>
     </main>
 
